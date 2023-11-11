@@ -1,6 +1,23 @@
 version: "3"
 
 services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER}"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
   dummy-api:
     build: ./barokey-dummy
     ports:
@@ -46,3 +63,4 @@ services:
 
 volumes:
   client-dist:
+  db-data:
