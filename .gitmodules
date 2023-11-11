@@ -1,0 +1,12 @@
+[submodule "barokey-dummy"]
+	path = barokey-dummy
+	url = git@github.com:UniD3-Hackathon-Team4/barokey-dummy.git
+	branch = main
+[submodule "barokey-client"]
+	path = barokey-client
+	url = git@github.com:UniD3-Hackathon-Team4/barokey-client.git
+	branch = dev
+[submodule "barokey-server"]
+	path = barokey-server
+	url = git@github.com:UniD3-Hackathon-Team4/barokey-server.git
+	branch = main
