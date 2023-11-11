@@ -9,6 +9,6 @@ if [ -z ${PGPASSWORD} ]; then
   exit 1
 fi
 
-pg_dump -d ${DB_NAME} -U ${DB_USER} -h localhost -p 40000 -Fc -v > ${OUT}
+pg_dump -d ${DB_NAME} -U ${DB_USER} -h localhost -p 5432 -Fc -v > ${OUT}
 echo "successfully dumped to the file: ${OUT}"
 exit
