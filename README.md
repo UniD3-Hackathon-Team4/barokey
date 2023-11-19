@@ -7,6 +7,7 @@
     <img src="images/header-1.png" style="width: 75%; height: auto;">
 </div>
 
+---
 # Disclaimer 🙏
 이 프로젝트는 제 3회 Uni-DTHON 해커톤 부문에서 `Team04`에 의해 출품된 작품입니다. 🎉
 
@@ -22,6 +23,7 @@ Please note that actual service of the project is not being provided!
 
 You can check more information about the 3rd Uni-DTHON in the next link! [link](docs/unidthon.md)
 
+---
 # About this project 📊
 <div align="center">
     <img src="images/body-1.png" style="width: 75%; height: auto;">
@@ -41,12 +43,13 @@ Out ultimate goal is that user can recognize the situation with a short keyword 
 
 BAROKEY provides a web service where the user can recognize the today's headlines near the user at a glance.
 
+---
 # Features 💡
 <div align="center">
     <img src="images/body-3.png" style="width: 75%; height: auto;">
 </div>
 
-#### #1. 실시간 혼잡도 지도 제공 Real-Time Congestion Map
+### #1. 실시간 혼잡도 지도 제공 Real-Time Congestion Map
 <div align="center">
     <img src="images/body-4.png" style="width: 80%; height: auto;">
 </div>
@@ -60,7 +63,7 @@ Provides the visualized degree of congestion of the region near the user.
 
 The more saturated in red the color of region is, the higher degree of congestion the region has and more dangerous it is.
 
-#### #2. 실시간 안전 이슈 키워드 제공 Real-Time Safety Related Issue Keywords
+### #2. 실시간 안전 이슈 키워드 제공 Real-Time Safety Related Issue Keywords
 <div align="center">
     <img src="images/body-5.gif" style="width: 80%; height: auto;">
 </div>
@@ -74,7 +77,7 @@ Show Word Cloud of real time issuing keywords related to safety.
 
 Implemented some animation of words for visually easy recognizing at a glance.
 
-#### #3. 이슈에 대한 자세한 정보 제공 Details About the Issue
+### #3. 이슈에 대한 자세한 정보 제공 Details About the Issue
 <div align="center">
     <img src="images/body-6.gif" style="width: 80%; height: auto;">
 </div>
@@ -88,34 +91,37 @@ Show summary of articles for selected issue keyword from SNS(Facebook, Instagram
 
 When clicking the article, it leads you to the original article.
 
+---
 # Service Architecture 🛠️
 <div align="center">
     <img src="images/body-2.png" style="width: 75%; height: auto;">
 </div>
 
-### Front-End
+## Front-End
 React-JS를 이용하여 프런트엔드를 구현하였습니다.
 
 Implemented Front-End with React-JS.
 
-### Back-End
-#### Back-End Server
+## Back-End
+### Back-End Server
 Node.js를 이용하여 기본 백엔드 서버를 구현하였고, 주기적으로 dummy server(FastAPI)에서 정보를 불러와 DB에 저장합니다.
 
 Implemented the basic Back-End server using Node.js, it periodically scrapes the information from dummy server(FastAPI) and saves it to the DB.
 
-#### Dummy Server
+### Dummy Server
 Dummy Server는 FastAPI와 Selenium을 이용하여 뉴스 등과 실시간 API 정보를 크롤링하여 제공합니다.
 
 Dummy Server provides data of crawled information from new etc. and real time API using FastAPI and Selenium.
 
+---
 # Tech Stacks 🎨
 - Front-End : <img src="https://img.shields.io/badge/figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/html5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/css3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/react-61DAFB.svg?style=for-the-badge&logo=react&logoColor=white" style="vertical-align: middle; padding: 5px;">
 - Back-End : <img src="https://img.shields.io/badge/node.js-339933.svg?style=for-the-badge&logo=node.js&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/fastapi-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=postgresql&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/selenium-43B02A.svg?style=for-the-badge&logo=selenium&logoColor=white" style="vertical-align: middle; padding: 5px;">
 - Deploy : <img src="https://img.shields.io/badge/AWS-FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" style="vertical-align: middle; padding: 5px;"> <img src="https://img.shields.io/badge/doker-0db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" style="vertical-align: middle; padding: 5px;">
 
+---
 # Further Improvements ⚙️
-### Mobile Support
+## Mobile Support
 사용자가 더 빠른 시간 내에 정보를 획득할 수 있는 플랫폼은 모바일일 것이라고 생각됩니다.
 
 We thought the platform where the user can get the information quickly would be mobile.
@@ -125,7 +131,7 @@ We thought the platform where the user can get the information quickly would be 
 
 Providing safety alerts with push notification based on GPS-based application later, it would be more suitable with our goals.
 
-### User Community Support
+## User Community Support
 일반 SNS을 통한 안전 정보 수집은 안전 이외의 주제로 인한 딜레이가 존재할 것으로 생각됩니다.
 
 There would be a little delay for collecting the safety related information in normal SNS due to the general issues not related to safety.
@@ -135,8 +141,9 @@ There would be a little delay for collecting the safety related information in n
 
 Running the community where the users can share safety information would bring positive effect.
 
+---
 # Credits 🎥
-### Team Members
+## Team Members
 | <div align="center">Name</div>   | <div align="center">School</div>                          | <div align="center">GitHub</div>                                                                                                               |
 | -------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div align="center">김민서</div> | <div align="center">포항공과대학교 컴퓨터공학과</div>     | <div align="center"><a href="https://github.com/kimminss0"><img src="https://img.shields.io/badge/kimminss0-black?logo=github"/></a></div>     |
@@ -145,13 +152,14 @@ Running the community where the users can share safety information would bring p
 | <div align="center">선민수</div> | <div align="center">포항공과대학교 컴퓨터공학과</div>     | <div align="center"><a href="https://github.com/minsusun"><img src="https://img.shields.io/badge/minsusun-black?logo=github"/></a></div>       |
 | <div align="center">정윤서</div> | <div align="center">숙명여자대학교 소프트웨어학부</div>   | <div align="center"><a href="https://github.com/Siiauw"><img src="https://img.shields.io/badge/Siiauw-black?logo=github"/></a></div>           |
 
-### Contributions
+## Contributions
 | <div align="center">Division</div>  | <div align="center">Description</div>                           | <div align="center">Members</div>                          |
 | ----------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------- |
 | <div align="center">Front-End</div> | <div align="center">React-JS를 이용한 프런트엔드 개발</div>     | <div align="center">김민서, 류미성<br>김태완, 정윤서</div> |
 | <div align="center">Back-End</div>  | <div align="center">Node.js, FastAPI를 이용한 백엔드 개발</div> | <div align="center">김민서, 선민수</div>                   |
 | <div align="center">Deploy</div>    | <div align="center">AWS, Docker를 이용한 배포 작업</div>        | <div align="center">김민서, 선민수</div>                   |
 
+---
 # Presentation 🔖
 발표 슬라이드는 다음 링크에서 확인할 수 있습니다! [link](docs/presentations.md)
 
